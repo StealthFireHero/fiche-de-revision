@@ -8,8 +8,9 @@ img:hover{
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
-h1{
-  margin: 100px ;
+header{
+  text-align: center;
+  padding: 20px;
   background-color: rgb(190, 139, 12);
 }
 
@@ -28,4 +29,41 @@ footer {
   background-color: #222;
   color: white;
   padding: 10px;
+}
+.menu-déroulant {
+  background-color: #0077cc;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-déroulant:hover {
+  background-color: #005fa3;
+}
+
+/* Contenu du menu déroulant */
+.Mathématiques {
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 250px;
+  padding: 10px;
+}
+.Mathématiques a {
+  text-decoration: none;
+  color: #0077cc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+.menu-déroulant.active + .Mathématiques {
+  display: flex;
 }
